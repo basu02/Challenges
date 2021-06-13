@@ -1,0 +1,30 @@
+We can retrive Instance metadata in below mentioned ways-:
+
+Way-1 -:
+
+There is a URL provided by AWS you just have to run curl command with below url and you will get metadata-
+curl http://169.254.169.254/latest/meta-data 
+-------------------------------------------------------------------------------------------------------------------------------------
+Way-2- : 
+
+We can use python libraries to get metadata of the instance in json format
+# Python3
+import urllib.request
+import json
+instanceid = urllib.request.urlopen('http://169.254.169.254/latest/meta-data/instance-id').read().decode()
+print(json.dumps(instanceid ()))
+--------------------------------------------------------------------------------------------------------------------------------------------
+Way-3-
+
+We can use python code to get metadata of the instance in json format
+#!/usr/bin/env python
+import requests
+import json
+# Converts AWS EC2 instance metadata to a dictionary
+def load():
+    metaurl = 'http://169.254.169.254/latest'
+    # those 3 top subdirectories are not exposed with a final '/'
+    metadict = {'dynamic': {}, 'meta-data': {}, 'user-data': {}}
+    return metadict
+    print(json.dumps(load()))
+---------------------------------------------------------------------------------------------------------------------------------------------------
