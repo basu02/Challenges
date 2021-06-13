@@ -1,3 +1,11 @@
+
+Challenge-1--A 3-tier environment is a common setup. Use a tool of your choosing/familiarity create these
+resources. Please remember we will not be judged on the outcome but more focusing on the
+approach, style and reproducibility.
+
+
+Solution---
+
 #I am using Terraform tool to provisioning or creating 3 tier environment. 
 #For creating 3 tier environment or application we need below resorces.
 #1.Create Main.tf in Terraform with provider(We are taking AWS here,with AWS cli with access key&secret key mentioned in AWS Configure command)
@@ -10,7 +18,7 @@
 #Create RDS Instance
 
 # Below is the terraform main.tf File for creating 3 tier environment.
-#Note- I am just creating normal single file right now but as an real scinieros we can segrigate this file in different files ex-Variable.tf etc
+#Note- I am just creating normal single file right now but as an real scenarios we can segregate this file in different files ex-Variable.tf etc
 #Also taking single resources in below script ex- single EC2 instance,subnet,Database, For high avilablity we have to create more resources.
 
 
