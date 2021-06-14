@@ -20,6 +20,13 @@ Solution---
 # Below is the terraform main.tf File for creating 3 tier environment.
 #Note- I am just creating normal single file right now but as an real scenarios we can segregate this file in different files ex-Variable.tf etc
 #Also taking single resources in below script ex- single EC2 instance,subnet,Database, For high avilablity we have to create more resources.
+#Commands we use to implement our changes are below-:
+
+#1.Terraform init-To initialize .terraform directory and updated plugins for mentioned provider.
+#2.Terraform validate- To validate our script if there is any syntax error.
+#3.Terraform plan- To check what implementaion or changes will be done after applying this script.
+#4.Terraform Apply- Final command to implement the changes in our enviroment.
+#5.Terraform destroy-If need to destroy this enviroment.
 
 
 #Below is the script
