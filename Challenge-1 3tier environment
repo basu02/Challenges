@@ -12,7 +12,7 @@ Solution---
 #2.Need to create below resources in AWS for 3 tier environment .
 #a.Create VPC and Subnets
 #b.Create Internet Gateway and Route Table
-#c.Create Web Servers(creating apache install file in same repo and give reference in main.tf for userdata)
+#c.Create Web Servers(EC2)(creating apache install file in same repo and give reference in main.tf for userdata)
 #d.Create Security Groups
 #E.Create Application Load Balancer
 #Create RDS Instance
